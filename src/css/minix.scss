@@ -1,0 +1,11 @@
+// 圆形
+@mixin circle($diameter) {
+  width: $diameter;
+  height: $diameter;
+  border-radius: 50%;
+}
+// 指定边长的正方形盒子
+@mixin size($size) {
+  width: $size;
+  height: $size;
+}
