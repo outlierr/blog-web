@@ -17,7 +17,7 @@
         <router-link v-else to="/login" :class="$style['nav-item']">
           登录
         </router-link>
-        <router-link to="/about/me" >
+        <router-link to="/about/me" :class="$style['nav-item']">
           关于
         </router-link>
       </div>
@@ -40,10 +40,13 @@ function logout() {
   display: inline-block;
   height: 48px;
   width: 100%;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.15);
 }
 .container {
   display: flex;
   line-height: 48px;
+  background-color: rgba(255, 255, 255, 0.5);
+
   @media screen and (min-width: $length-screen-pad) {
     padding: 0 5vw;
   }
@@ -60,12 +63,15 @@ function logout() {
 
   padding: 0 1.5rem;
   background-color: transparent;
-
-
+  line-height: 48px;
+  // 文本不可选择
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
   &:hover, &:focus {
     text-decoration: none;
     color: black;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 }
 </style>

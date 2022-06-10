@@ -30,3 +30,9 @@ textarea {
   overflow: auto;
   resize: vertical;
 }
+// 清楚默认 a 标签样式
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+}
