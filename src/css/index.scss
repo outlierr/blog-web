@@ -4,12 +4,12 @@
 .head {
   @include circle(75px);
   &.lite {
-    @include size(36px)
+    @include size(36px);
   }
   &.small {
-    @include size(48px)
+    @include size(48px);
   }
   &.large {
-    @include size(100px)
+    @include size(100px);
   }
 }

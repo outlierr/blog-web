@@ -1,4 +1,6 @@
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -11,8 +13,18 @@ body {
   outline: 0 !important;
 }
 
-img, svg {
+img,
+svg {
   vertical-align: middle;
+}
+
+button {
+  font-size: initial;
+  border: none;
+  background: none;
+  &:enabled{ // 能够点击的按钮都使用手指光标
+    cursor: pointer;
+  }
 }
 
 //干掉奇丑的默认边框 表格边框设置为折叠 而不是独立分开

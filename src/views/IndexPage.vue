@@ -3,9 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import TopNav from "@/components/TopNav.vue"
-import {ref} from "vue";
+import TopNav from "@/components/TopNav.vue";
 </script>
 
-<style module lang="scss">
-</style>
+<style module lang="scss"></style>
